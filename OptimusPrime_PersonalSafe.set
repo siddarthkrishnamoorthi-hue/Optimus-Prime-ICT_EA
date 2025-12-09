@@ -1,0 +1,97 @@
+; OptimusPrime_PersonalSafe.set
+; Moderate risk for personal capital preservation
+; Target: Steady growth with controlled drawdown
+; Expected Monthly Return: 10-20%
+
+inp_SymbolSuffix=
+inp_MagicNumber=240324
+inp_VerboseDebug=false
+inp_CommentPrefix=OptimusPrime
+
+; Killzone Settings (Both sessions enabled)
+inp_EnableLondonKZ=true
+inp_EnableNewYorkKZ=true
+inp_AllowOffKillzone=false
+inp_UsePowerHours=false
+
+; Timeframe Settings
+inp_ExecutionTF=15
+inp_ConfirmTF=60
+inp_BiasTF=240
+
+; Risk Management (MODERATE)
+inp_RiskPerTrade=1.5
+inp_MaxDailyRiskPercent=4.5
+inp_MaxTradesPerDay=4
+inp_MaxConsecutiveLosses=3
+inp_CooldownPeriod=240
+inp_MaxDrawdownPercent=10.0
+inp_MaxMarginUsagePercent=40.0
+inp_MaxRiskPips=50
+
+; Rolling True Range
+inp_RollingTR_Period_M15=14
+inp_RollingTR_Period_H1=10
+inp_RollingTR_Period_H4=8
+
+; Swing Structure
+inp_SwingWindow=5
+inp_SwingLookback=20
+
+; Break of Structure
+inp_BOS_MinBreak_Factor=0.2
+inp_BOS_Lookback=3
+
+; Liquidity
+inp_LiqPool_Range_Pips=15
+inp_LS_WickFactor=0.3
+inp_LS_MinWick=0.5
+inp_LS_BodyFactor=0.6
+inp_LS_ValidityBars=5
+
+; Fair Value Gap
+inp_FVG_MinFactor=0.4
+inp_FVG_MaxFactor=2.5
+inp_ImpulseBodyFactor=0.7
+
+; Order Block
+inp_OB_MinBodyFactor=0.65
+inp_ImpulseCandles=3
+inp_ImpulseMinMove=1.5
+inp_OB_MaxRangeFactor=0.8
+
+; Confluence (BALANCED)
+inp_Confluence_Radius=0.4
+inp_Min_Confluence_Score=4
+
+; Entry & Execution
+inp_RequireRetrace=true
+inp_MaxSlippagePips=2.0
+inp_OrderExpiration_Hours=4
+
+; Stop Loss
+inp_SL_Buffer=0.3
+inp_SL_MaxATR_Multiple=2.0
+
+; Take Profit (Standard RR)
+inp_TP1_RR=1.5
+inp_TP2_RR=3.0
+inp_TP3_RR=5.0
+inp_TP1_ClosePercent=40
+inp_TP2_ClosePercent=40
+
+; Trailing Stop
+inp_UseTrailingStop=true
+inp_TrailActivationR=1.5
+inp_TrailDistance_ATR=1.0
+inp_TrailStep_Pips=5
+
+; Market Filters (MODERATE)
+inp_SpreadMaxPips=1.8
+inp_VolFilterMin=0.3
+inp_VolFilterMax=3.0
+inp_NewsFilterEnabled=false
+inp_NewsBlackoutMinutes=30
+
+; Commission & Costs
+inp_CommissionPerLot=7.0
