@@ -1,0 +1,97 @@
+; OptimusPrime_PersonalAggressive.set
+; High-performance settings for experienced traders
+; Target: Maximum returns with higher risk tolerance
+; Expected Monthly Return: 20-40%
+
+inp_SymbolSuffix=
+inp_MagicNumber=240324
+inp_VerboseDebug=false
+inp_CommentPrefix=OptimusPrime
+
+; Killzone Settings (Flexible trading)
+inp_EnableLondonKZ=true
+inp_EnableNewYorkKZ=true
+inp_AllowOffKillzone=true
+inp_UsePowerHours=false
+
+; Timeframe Settings
+inp_ExecutionTF=15
+inp_ConfirmTF=60
+inp_BiasTF=240
+
+; Risk Management (AGGRESSIVE)
+inp_RiskPerTrade=2.5
+inp_MaxDailyRiskPercent=7.5
+inp_MaxTradesPerDay=6
+inp_MaxConsecutiveLosses=4
+inp_CooldownPeriod=180
+inp_MaxDrawdownPercent=15.0
+inp_MaxMarginUsagePercent=50.0
+inp_MaxRiskPips=50
+
+; Rolling True Range
+inp_RollingTR_Period_M15=14
+inp_RollingTR_Period_H1=10
+inp_RollingTR_Period_H4=8
+
+; Swing Structure
+inp_SwingWindow=5
+inp_SwingLookback=20
+
+; Break of Structure
+inp_BOS_MinBreak_Factor=0.2
+inp_BOS_Lookback=3
+
+; Liquidity
+inp_LiqPool_Range_Pips=15
+inp_LS_WickFactor=0.3
+inp_LS_MinWick=0.5
+inp_LS_BodyFactor=0.6
+inp_LS_ValidityBars=5
+
+; Fair Value Gap
+inp_FVG_MinFactor=0.4
+inp_FVG_MaxFactor=2.5
+inp_ImpulseBodyFactor=0.7
+
+; Order Block
+inp_OB_MinBodyFactor=0.65
+inp_ImpulseCandles=3
+inp_ImpulseMinMove=1.5
+inp_OB_MaxRangeFactor=0.8
+
+; Confluence (RELAXED)
+inp_Confluence_Radius=0.4
+inp_Min_Confluence_Score=3
+
+; Entry & Execution
+inp_RequireRetrace=false
+inp_MaxSlippagePips=2.0
+inp_OrderExpiration_Hours=4
+
+; Stop Loss
+inp_SL_Buffer=0.3
+inp_SL_MaxATR_Multiple=2.0
+
+; Take Profit (Lower RR, more frequent wins)
+inp_TP1_RR=1.2
+inp_TP2_RR=2.5
+inp_TP3_RR=5.0
+inp_TP1_ClosePercent=30
+inp_TP2_ClosePercent=40
+
+; Trailing Stop
+inp_UseTrailingStop=true
+inp_TrailActivationR=1.2
+inp_TrailDistance_ATR=1.0
+inp_TrailStep_Pips=5
+
+; Market Filters (RELAXED)
+inp_SpreadMaxPips=2.5
+inp_VolFilterMin=0.3
+inp_VolFilterMax=3.0
+inp_NewsFilterEnabled=false
+inp_NewsBlackoutMinutes=30
+
+; Commission & Costs
+inp_CommissionPerLot=7.0
